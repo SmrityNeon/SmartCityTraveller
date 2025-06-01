@@ -1,0 +1,65 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    android:background="#F5F7FA">
+
+    <!-- Title -->
+    <TextView
+        android:id="@+id/tvWelcome"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="🏨 Available Hotels"
+        android:textColor="#2E3A59"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:gravity="center"
+        android:layout_marginTop="8dp" />
+
+    <!-- SearchView -->
+    <SearchView
+        android:id="@+id/searchView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tvWelcome"
+        android:layout_marginTop="12dp"
+        android:layout_marginBottom="8dp"
+        android:queryHint="Search hotel by name"
+        android:iconifiedByDefault="false"/>
+
+    <!-- RecyclerView -->
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerHotels"
+        android:layout_below="@id/searchView"
+        android:layout_above="@id/btnViewBookings"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginBottom="16dp" />
+
+    <!-- View My Bookings Button -->
+    <Button
+        android:id="@+id/btnViewBookings"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="📋 View My Bookings"
+        android:textAllCaps="false"
+        android:textColor="#FFFFFF"
+        android:backgroundTint="#388E3C"
+        android:padding="14dp"
+        android:layout_above="@id/btnLogout"
+        android:layout_marginBottom="8dp"
+        android:background="@drawable/rounded_button_green" />
+
+    <!-- Logout Button -->
+    <Button
+        android:id="@+id/btnLogout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="🚪 Logout"
+        android:textAllCaps="false"
+        android:textColor="#FFFFFF"
+        android:backgroundTint="#D32F2F"
+        android:padding="14dp"
+        android:layout_alignParentBottom="true"
+        android:background="@drawable/rounded_button_red" />
+</RelativeLayout>

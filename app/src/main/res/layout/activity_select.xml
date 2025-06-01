@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F5F7FA">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center_horizontal"
+        android:padding="32dp">
+
+        <!-- Logo Image -->
+        <ImageView
+            android:id="@+id/logoImage"
+            android:layout_width="160dp"
+            android:layout_height="160dp"
+            android:src="@drawable/loff"
+            android:layout_marginBottom="40dp"
+            android:contentDescription="App Logo" />
+
+        <!-- Title -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Smart City Traveler"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            android:textColor="#333333"
+            android:layout_marginBottom="40dp" />
+
+        <!-- User Login Button -->
+        <Button
+            android:id="@+id/btnUserLogin"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="👤 User Login"
+            android:background="@drawable/rounded_button_user"
+            android:textColor="#FFFFFF"
+            android:elevation="4dp"
+            android:textAllCaps="false"
+            android:layout_marginBottom="20dp"
+            android:padding="14dp" />
+
+        <!-- Admin Login Button -->
+        <Button
+            android:id="@+id/btnAdminLogin"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="🔐 Admin Login"
+            android:background="@drawable/rounded_button_admin"
+            android:textColor="#FFFFFF"
+            android:elevation="4dp"
+            android:textAllCaps="false"
+            android:padding="14dp" />
+    </LinearLayout>
+</ScrollView>

@@ -1,0 +1,30 @@
+{
+  "project_info": {
+    "project_number": "522101436523",
+    "firebase_url": "https://myapp-d935f-default-rtdb.firebaseio.com",
+    "project_id": "myapp-d935f",
+    "storage_bucket": "myapp-d935f.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:522101436523:android:4e76f7b07590baeec8c12e",
+        "android_client_info": {
+          "package_name": "com.example.smartcitytraveler"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCg0mZds8b9AkCQTpqqsPKAW9OTlG7Wri8"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
